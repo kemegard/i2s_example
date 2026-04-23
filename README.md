@@ -1,6 +1,8 @@
 # I2S Audio Example — nRF54L15
 
-A minimal Zephyr application that demonstrates continuous I2S audio streaming on the nRF54L15, including a hardware loopback test to verify data integrity end-to-end.
+A Zephyr application that demonstrates continuous I2S audio streaming on the nRF54L15, including a hardware loopback test to verify data integrity end-to-end.
+
+For a stripped-down version without loopback verification, see the companion example: **[i2s_minimal](https://github.com/kemegard/i2s_minimal)**.
 
 ## What it does
 
