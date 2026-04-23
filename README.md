@@ -50,13 +50,14 @@ Wire **P1.8 (SDOUT) → P1.9 (SDIN)** on the expansion header. With the wire con
 
 ## Building and flashing
 
-```bash
-cd <west-workspace>   # e.g. D:\work\ncs\v3.3.0-rc2
-west build -b nrf54l15dk/nrf54l15/cpuapp \
-    -s <path-to-this-folder> \
-    -d <path-to-this-folder>/build \
+```powershell
+Push-Location <west-workspace>   # e.g. D:\work\ncs\v3.3.0-rc2
+west build -b nrf54l15dk/nrf54l15/cpuapp `
+    -s <path-to-i2s_example> `
+    -d <path-to-i2s_example>\build `
     --pristine
-west flash -d <path-to-this-folder>/build
+west flash -d <path-to-i2s_example>\build
+Pop-Location
 ```
 
 ## Serial output
